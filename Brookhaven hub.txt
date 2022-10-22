@@ -1,0 +1,1 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Princelion33/Brookhaven-hub/main/Script'))()
