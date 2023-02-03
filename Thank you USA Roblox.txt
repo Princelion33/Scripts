@@ -1,1 +1,0 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Princelion33/Thank-you-U.S.A-Roblox-script/main/Script'))()
