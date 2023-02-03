@@ -1,1 +1,1 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Princelion33/Gangsta-s-Paradise-Roblox-Script/main/Script'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Princelion33/Script-obu/main/Gangsta's%20Paradise.lua'))()
