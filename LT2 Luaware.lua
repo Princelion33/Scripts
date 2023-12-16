@@ -7,7 +7,7 @@ print("LuaWare Loader Succes")
 
 -----------[-//LUWARE LOADER-//]-------
 
-if game.PlaceId == 13822889 and 10042772221 then
+if game.PlaceId == 13822889 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/frencaliber/scriptsstorage/main/LumberTycoonLW",true))()
 elseif game.PlaceId == 11257760806 then
     game.Players.LocalPlayer:Kick("Script is patched join discord for updates.")
