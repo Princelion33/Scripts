@@ -1,6 +1,6 @@
 if game.PlaceId == 13822889 then -- 🌳 Lumber Tycoon 2
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Butterisgood/Butter/main/lt2'))("")
-if game.PlaceId == 13822889 then -- 🌳 Lumber Tycoon 2
+if game.PlaceId == 10042772221 then -- 🌳 Lumber Tycoon 2
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Butterisgood/Butter/main/lt2'))("")
 elseif game.PlaceId == 6897226634 then -- Timber! 🌲
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Butterisgood/Butter/main/timber-obfuscated.lua'))("")
