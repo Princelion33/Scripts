@@ -43,7 +43,7 @@ Added:Disconnect()
 end
 
 
-a1:CreateSlider("Amount", 0, 100, 5, false, function(value)
+a1:CreateSlider("Amount", 0, 100, 100, false, function(value)
     Amount1 = value
 end)
 
