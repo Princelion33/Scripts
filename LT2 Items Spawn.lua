@@ -43,7 +43,7 @@ Added:Disconnect()
 end
 
 
-a1:CreateSlider("Amount", 0, 100, 100, false, function(value)
+a1:CreateSlider("Amount", 0, 5, 1000, false, function(value)
     Amount1 = value
 end)
 
@@ -72,7 +72,7 @@ end)
 
 game.StarterGui:SetCore("SendNotification", {
     Title = "HEY !"; -- the title (ofc)
-    Text = "Script Made by Silent"; -- what the text says (ofc)
+    Text = "Script Made by Princelion33"; -- what the text says (ofc)
     Icon = ""; -- the image if u want. 
     Duration = 5; -- how long the notification should in secounds
     })
