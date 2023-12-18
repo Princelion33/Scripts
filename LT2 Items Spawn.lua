@@ -7,7 +7,7 @@ local PhantomForcesWindow = Library:NewWindow("Item Spawner")
 local N=game:GetService("VirtualInputManager")
 
 Selection = nil
-Amount1 = 100
+Amount1 = 5
 local a1 = PhantomForcesWindow:NewSection("Items")
 
 
