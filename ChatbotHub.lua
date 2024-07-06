@@ -77,9 +77,9 @@ local AiModels = {
 }
 
 local AiCost = {
-	["Llama-8B ( default )"] = 1,
-	["Llama2-7B ( if default one fails )"] = 1,
-	["Llama-70B ( x10 points )"] = 10
+	["Llama-8B ( default )"] = -1,
+	["Llama2-7B ( if default one fails )"] = 0,
+	["Llama-70B ( x10 points )"] = 0
 }
 
 if _G.CHATBOTHUB_RAN == nil then
@@ -233,7 +233,7 @@ local function login(key)
 		
 		_G.CHATBOTHUB_CREDITS = tonumber(game:HttpGet("https://guerric.pythonanywhere.com/credits?uid="..LocalPlayer.UserId))
 		local premium = tonumber(game:HttpGet("https://guerric.pythonanywhere.com/premium?uid="..LocalPlayer.UserId.."&key=".._G.CHATBOTHUB_KEY))
-		if premium == 1 then _G.CHATBOTHUB_PREMIUM = true else _G.CHATBOTHUB_PREMIUM = false end
+		if premium == 1 then _G.CHATBOTHUB_PREMIUM = true else _G.CHATBOTHUB_PREMIUM = true end
 		updateCredits()
 		updatePremium()
 		OrionLib:MakeNotification{
@@ -754,7 +754,7 @@ local function main(message, userDisplay, uid)
    local mult = 1
 
    if _G.CHATBOTHUB_TTA then
-		mult = 2
+		mult = 0
    end
 
    _G.CHATBOTHUB_CREDITS -= AiCost[_G.CHATBOTHUB_AI_MODEL]*mult
