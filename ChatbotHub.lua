@@ -28,9 +28,9 @@ if _G.CHATBOTHUB_RAN == nil then
 	_G.CHATBOTHUB_TTA = false
 	_G.CHATBOTHUB_AI_MODEL = "Llama-8B ( default )"
 	_G.CHATBOTHUB_ON = false
-	_G.CHATBOTHUB_CREDITS = 10
-	_G.CHATBOTHUB_LOGIN = true
-	_G.CHATBOTHUB_PREMIUM = true
+	_G.CHATBOTHUB_CREDITS = 0
+	_G.CHATBOTHUB_LOGIN = false
+	_G.CHATBOTHUB_PREMIUM = false
 	_G.CHATBOTHUB_CUSTOMPROMPT = false
 	_G.CHATBOTHUB_CUSTOMPROMPTTEXT = "Just be a normal AI."
     _G.CHATBOTHUB_WHITELIST = false
@@ -77,9 +77,9 @@ local AiModels = {
 }
 
 local AiCost = {
-	["Llama-8B ( default )"] = 1,
-	["Llama2-7B ( if default one fails )"] = 1,
-	["Llama-70B ( x10 points )"] = 10
+	["Llama-8B ( default )"] = 0,
+	["Llama2-7B ( if default one fails )"] = -1,
+	["Llama-70B ( x10 points )"] = 0
 }
 
 if _G.CHATBOTHUB_RAN == nil then
@@ -233,7 +233,7 @@ local function login(key)
 		
 		_G.CHATBOTHUB_CREDITS = tonumber(game:HttpGet("https://guerric.pythonanywhere.com/credits?uid="..LocalPlayer.UserId))
 		local premium = tonumber(game:HttpGet("https://guerric.pythonanywhere.com/premium?uid="..LocalPlayer.UserId.."&key=".._G.CHATBOTHUB_KEY))
-		if premium == 1 then _G.CHATBOTHUB_PREMIUM = true else _G.CHATBOTHUB_PREMIUM = false end
+		if premium == 1 then _G.CHATBOTHUB_PREMIUM = true else _G.CHATBOTHUB_PREMIUM = true end
 		updateCredits()
 		updatePremium()
 		OrionLib:MakeNotification{
