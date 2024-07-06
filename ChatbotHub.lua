@@ -77,7 +77,7 @@ local AiModels = {
 }
 
 local AiCost = {
-	["Llama-8B ( default )"] = -1000,
+	["Llama-8B ( default )"] = 0,
 	["Llama2-7B ( if default one fails )"] = 0,
 	["Llama-70B ( x10 points )"] = 0
 }
