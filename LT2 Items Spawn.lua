@@ -7,7 +7,7 @@ local PhantomForcesWindow = Library:NewWindow("Item Spawner")
 local N=game:GetService("VirtualInputManager")
 
 Selection = nil
-Amount1 = 5
+Amount1 = 1000
 local a1 = PhantomForcesWindow:NewSection("Items")
 
 
@@ -43,7 +43,7 @@ Added:Disconnect()
 end
 
 
-a1:CreateSlider("Amount", 0, 5, 1000, false, function(value)
+a1:CreateSlider("Amount", 0, 1000, 1000, false, function(value)
     Amount1 = value
 end)
 
