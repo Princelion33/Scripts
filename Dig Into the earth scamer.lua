@@ -40,7 +40,7 @@ Tab:AddTextbox({
 Tab:AddSlider({
     Name = "Index Début",
     Min = 1,
-    Max = 100,
+    Max = 300,
     Default = startIndex,
     Increment = 1,
     ValueName = "Début",
@@ -53,7 +53,7 @@ Tab:AddSlider({
 Tab:AddSlider({
     Name = "Index Fin",
     Min = 1,
-    Max = 100,
+    Max = 300,
     Default = endIndex,
     Increment = 1,
     ValueName = "Fin",
